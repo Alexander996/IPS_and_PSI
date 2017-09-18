@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: rgb(27, 29, 53);
+}
+
+/* Base text style */
+.text_style {
+	display: inline-block;
+	padding: 5px;
+	color: rgb(220, 127, 49);
+	font-family: "Phenomena";
+	font-size: 28px;
+	text-decoration: none;
+}
+
+.text_style:after {
+	display: block;
+	content: "";
+	height: 2px;
+	width: 0%;
+	background-color: rgb(220, 127, 49);
+	margin: 0 auto;
+	transition: .2s ease-in-out;
+}
+
+.text_style:hover:after,
+.text_style:focus:after {
+	width: 100%;
+}
