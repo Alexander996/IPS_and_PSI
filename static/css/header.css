@@ -5,20 +5,33 @@ body {
 
 header {
 	background-color: rgb(27, 29, 53);
-	padding-top: 10px;
+	padding: 10px 0;
 }
 
-/* Base text style */
-.header_text_style {
-	display: inline-block;
-	padding: 5px;
+/* Header text style */
+.header_text {
 	color: rgb(220, 127, 49);
 	font-family: "Phenomena", sans-serif;
-	font-size: 28px;
+	font-size: 24px;
+}
+
+.header_link_shell {
+	padding: 0;
+	margin: 0;
+}
+
+.header_link {
+	display: inline-block;
 	text-decoration: none;
 }
 
-.header_text_style:after {
+.header_link:hover,
+.header_link:focus {
+	text-decoration: none;
+	color: rgb(220, 127, 49);
+}
+
+.header_link:after {
 	display: block;
 	content: "";
 	height: 2px;
@@ -28,8 +41,7 @@ header {
 	transition: .2s ease-in-out;
 }
 
-.header_text_style:hover:after,
-.header_text_style:focus:after {
+.header_link:hover:after {
 	width: 100%;
 }
 
@@ -37,4 +49,17 @@ header {
 .header_logo {
 	display: block;
 	margin: 0 auto;
+}
+
+/* Navbar */
+.header_navbar {
+	margin: 10px 0 0 0;
+	padding: 0;
+	text-align: center;
+}
+
+.header_navbar_item {
+	display: inline-block;
+	text-decoration: none;
+	padding: 0 20px;
 }
