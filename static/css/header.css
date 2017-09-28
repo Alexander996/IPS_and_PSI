@@ -5,6 +5,7 @@ body {
 
 header {
 	background-color: rgb(27, 29, 53);
+	padding-top: 10px;
 }
 
 /* Base text style */
@@ -30,4 +31,10 @@ header {
 .header_text_style:hover:after,
 .header_text_style:focus:after {
 	width: 100%;
+}
+
+/* Logo */
+.header_logo {
+	display: block;
+	margin: 0 auto;
 }
