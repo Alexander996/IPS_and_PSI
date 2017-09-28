@@ -4,7 +4,8 @@ body {
 }
 
 header {
-	background-color: rgb(27, 29, 53);
+	/*background-color: rgb(27, 29, 53);*/
+	background-color: white;
 }
 
 /* Base text style */
