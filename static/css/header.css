@@ -4,12 +4,11 @@ body {
 }
 
 header {
-	/*background-color: rgb(27, 29, 53);*/
-	background-color: white;
+	background-color: rgb(27, 29, 53);
 }
 
 /* Base text style */
-.text_style {
+.header_text_style {
 	display: inline-block;
 	padding: 5px;
 	color: rgb(220, 127, 49);
@@ -18,7 +17,7 @@ header {
 	text-decoration: none;
 }
 
-.text_style:after {
+.header_text_style:after {
 	display: block;
 	content: "";
 	height: 2px;
@@ -28,7 +27,7 @@ header {
 	transition: .2s ease-in-out;
 }
 
-.text_style:hover:after,
-.text_style:focus:after {
+.header_text_style:hover:after,
+.header_text_style:focus:after {
 	width: 100%;
 }
