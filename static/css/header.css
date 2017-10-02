@@ -5,16 +5,18 @@ body {
 
 header {
 	background-color: rgb(27, 29, 53);
-	padding: 10px 0;
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
 
 /* Header text style */
 .header_text {
 	color: rgb(220, 127, 49);
 	font-family: "Phenomena", sans-serif;
-	font-size: 24px;
+	font-size: 20px;
 }
 
+/* Header link style */
 .header_link_shell {
 	padding: 0;
 	margin: 0;
@@ -23,12 +25,18 @@ header {
 .header_link {
 	display: inline-block;
 	text-decoration: none;
+	padding: 0 15px 5px;
 }
 
 .header_link:hover,
 .header_link:focus {
 	text-decoration: none;
 	color: rgb(220, 127, 49);
+}
+
+.header_link:hover {
+	background-color: rgb(52, 74, 101);
+	border-radius: 5px;
 }
 
 .header_link:after {
@@ -49,17 +57,21 @@ header {
 .header_logo {
 	display: block;
 	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
 }
 
 /* Navbar */
 .header_navbar {
-	margin: 10px 0 0 0;
+	display: table;
+	max-width: 850px;
+	width: 100%;
+	margin: 10px auto 0;
 	padding: 0;
-	text-align: center;
 }
 
-.header_navbar_item {
-	display: inline-block;
+.header_navbar li {
+	display: table-cell;
+	text-align: center;
 	text-decoration: none;
-	padding: 0 20px;
 }
