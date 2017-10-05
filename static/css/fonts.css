@@ -1,5 +1,10 @@
-/* Phenomena-regular */
+/* Phenomena */
 @font-face {
 	font-family: "Phenomena";
 	src: url("../fonts/phenomena/Phenomena-Regular.otf");
+}
+
+@font-face {
+	font-family: "Phenomena-ExtraBold";
+	src: url("../fonts/phenomena/Phenomena-ExtraBold.otf");
 }

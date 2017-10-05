@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	text-shadow: #000 1px 0 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
 }
 
 header {
@@ -13,7 +14,7 @@ header {
 .header_text {
 	color: rgb(220, 127, 49);
 	font-family: "Phenomena", sans-serif;
-	font-size: 20px;
+	font-size: 24px;
 }
 
 /* Header link style */
@@ -44,6 +45,8 @@ header {
 	content: "";
 	height: 2px;
 	width: 0;
+	box-shadow: #000 1px 0 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
+	font-family: "Phenomena-ExtraBold", sans-serif;
 	background-color: rgb(220, 127, 49);
 	margin: 0 auto;
 	transition: .2s ease-in-out;
@@ -74,4 +77,41 @@ header {
 	display: table-cell;
 	text-align: center;
 	text-decoration: none;
+}
+
+/* Search line */
+.search {
+	position: relative;
+	margin: 60px 0 10px 10px;
+	min-width: 100%;
+}
+
+.search button {
+	color: rgb(220, 127, 49);
+	background-color: rgb(77, 118, 147);
+	border-style: none;
+	border-radius: 20px;
+	text-shadow: #000 1px 0 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
+	font-family: "Phenomena-ExtraBold", sans-serif;
+	font-size: 18px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	line-height: 20px;
+}
+
+.search button:focus,
+.search input:focus {
+	outline: none;
+}
+
+.search input {
+	border-style: none;
+	border-radius: 16px;
+	height: 24px;
+	width: 400px;
+	padding-left: 65px;
+	margin: 1px 0 1px 3px;
+	background-color: rgb(146, 143, 134);
 }
