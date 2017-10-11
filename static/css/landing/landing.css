@@ -1,0 +1,87 @@
+/* Border line before and after blocks */
+.separator {
+	border: none;
+	height: 2px;
+	background-color: rgb(220, 127, 49);
+	margin: 10px 0;
+}
+
+/* Tile background */
+.tile {
+	background-color: rgb(77, 118, 147);
+	margin: 10px 0;
+	border-color: rgb(220, 127, 49);
+	border-style: solid;
+	border-width: 2px 0;
+}
+
+/* Tile text style */
+.tile_text {
+	font-family: "Phenomena", sans-serif;
+	font-size: 22px;
+	color: rgb(232, 226, 192);
+	display: inline-block;
+	text-decoration: none;
+	padding: 2px 15px 5px;
+	border-radius: 10px;
+	border-style: solid;
+	border-color: rgb(77, 118, 147);
+	border-width: 3px;
+}
+
+.tile_text:hover,
+.tile_text:focus {
+	text-decoration: none;
+	outline: none;
+	color: rgb(232, 226, 192);
+}
+
+.tile_text:hover {
+	background-color: rgb(52, 74, 101);
+	border-radius: 10px;
+	border-style: solid;
+	border-color: rgb(220, 127, 49);
+	border-width: 3px;
+}
+
+.tile_text:after {
+	display: block;
+	content: "";
+	height: 2px;
+	/*width: 0;*/
+	background-color: rgb(232, 226, 192);
+	margin: 0 auto;
+	/*transition: .2s ease-in-out;*/
+}
+
+/*.tile_text:hover:after {
+	width: 100%;
+}*/
+
+/* Tile list */
+.tile_list {
+	display: table;
+	width: 100%;
+	margin: 10px auto 5px;
+}
+
+.tile_list li {
+	display: table-cell;
+	text-align: center;
+}
+
+.tile_list img {
+	border-style: solid;
+	border-color: rgb(77, 118, 147);
+	border-width: 5px;
+	border-radius: 100px;
+	max-width: 100%;
+	height: auto;
+}
+
+.tile_list img:hover {
+	border-style: solid;
+	border-color: rgb(220, 127, 49);
+	border-width: 5px;
+	border-radius: 100px;
+}

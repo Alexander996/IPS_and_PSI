@@ -1,3 +1,65 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block include_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/landing/landing.css' %}">
+{% endblock %}
 
 {% block title %}Плитка{% endblock %}
+
+{% block content %}
+<hr class="separator">
+<div class="tile">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="tile_list">
+					<li>
+						<a href="#">
+							<img src="../../media/images/landing/emblem_tiles/bath.png" alt="">
+						</a>
+						<p><a class="tile_text" href="#">ВАННАЯ</a></p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="../../media/images/landing/emblem_tiles/kitchen.png" alt="">
+						</a>
+						<p><a class="tile_text" href="#">КУХНЯ</a></p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="../../media/images/landing/emblem_tiles/floor.png" alt="">
+						</a>
+						<p><a class="tile_text" href="#">ПОЛ</a></p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="../../media/images/landing/emblem_tiles/mosaic.png" alt="">
+						</a>
+						<p><a class="tile_text" href="#">МОЗАИКА</a></p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="../../media/images/landing/emblem_tiles/porcelain_stoneware.png" alt="">
+						</a>
+						<p><a class="tile_text" href="#">КЕРАМОГРАНИТ</a></p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="../../media/images/landing/emblem_tiles/bath.png" alt="">
+						</a>
+						<p><a class="tile_text" href="#">СТУПЕНИ</a></p>
+					</li>
+					<li>
+						<a href="#">
+							<img src="../../media/images/landing/emblem_tiles/bath.png" alt="">
+						</a>
+						<p><a class="tile_text" href="#">КЛИНКЕР</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<hr class="separator">
+{% endblock %}
