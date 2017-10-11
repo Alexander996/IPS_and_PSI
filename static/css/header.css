@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	text-shadow: #000 1px 0 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
+	text-shadow: #000 1px 0 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px; /* Обводка текста черным */
 }
 
 header {
@@ -10,11 +10,15 @@ header {
 	padding-bottom: 10px;
 }
 
+p {
+	margin: 0;
+}
+
 /* Header text style */
 .header_text {
 	color: rgb(220, 127, 49);
 	font-family: "Phenomena", sans-serif;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 /* Header link style */
@@ -32,6 +36,7 @@ header {
 .header_link:hover,
 .header_link:focus {
 	text-decoration: none;
+	outline: none;
 	color: rgb(220, 127, 49);
 }
 
@@ -56,18 +61,40 @@ header {
 	width: 100%;
 }
 
+/* Address in the header */
+.header_address {
+	font-size: 16px;
+	margin-left: 15px;
+	padding-bottom: 25px;
+}
+
 /* Logo */
 .header_logo {
 	display: block;
-	margin: 0 auto;
+	margin: 20px auto 0;
 	max-width: 100%;
 	height: auto;
+}
+
+/* Right aligment in the header for items on the right */
+.header_right {
+	text-align: right;
+}
+
+/* Clock in the header */
+.working_time {
+	margin-top: 20px;
+}
+
+.working_time span {
+	font-family: "Phenomena-ExtraBold", sans-serif;
+	padding-left: 10px;
 }
 
 /* Navbar */
 .header_navbar {
 	display: table;
-	max-width: 850px;
+	max-width: 1000px;
 	width: 100%;
 	margin: 10px auto 0;
 	padding: 0;
@@ -79,10 +106,14 @@ header {
 	text-decoration: none;
 }
 
+.header_navbar li a {
+	font-size: 26px;
+}
+
 /* Search line */
 .search {
 	position: relative;
-	margin: 60px 0 10px 10px;
+	margin: 15px 0 10px 10px;
 	min-width: 100%;
 }
 
