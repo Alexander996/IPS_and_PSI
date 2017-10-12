@@ -5,6 +5,11 @@
 }
 
 @font-face {
-	font-family: "Phenomena-ExtraBold";
+	font-family: "Phenomena ExtraBold";
 	src: url("../fonts/phenomena/Phenomena-ExtraBold.otf");
+}
+
+@font-face {
+	font-family: "Phenomena Bold";
+	src: url("../fonts/phenomena/Phenomena-Bold.otf");
 }

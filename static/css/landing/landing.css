@@ -1,9 +1,30 @@
+/* Tile block title */
+.tile_name {
+	text-align: center;
+}
+
+.tile_name span {
+	font-family: "Phenomena Bold", sans-serif;
+	font-size: 36px;
+	color: rgb(220, 127, 49);
+	margin: 0 7px;
+}
+
+/* Squares around tile block title */
+.square {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-color: rgb(220, 127, 49);
+	margin: 0 3px;
+}
+
 /* Border line before and after blocks */
 .separator {
 	border: none;
 	height: 2px;
 	background-color: rgb(220, 127, 49);
-	margin: 10px 0;
+	margin: 0 0 10px;
 }
 
 /* Tile background */
@@ -13,6 +34,27 @@
 	border-color: rgb(220, 127, 49);
 	border-style: solid;
 	border-width: 2px 0;
+	position: relative;
+}
+
+/* Triangle */
+.tile:before,
+.tile:after {
+	content: "";
+	width: 0;
+	height: 0;
+	border: 60px solid transparent;
+	border-top: 50px solid rgb(220, 127, 49);
+	border-bottom: none;
+	position: absolute;
+	left: 50%;
+	margin-left: -60px;
+	top: 0;
+}
+
+.tile:after {
+	border-top: 50px solid rgb(27, 29, 53);
+	top: -3px;
 }
 
 /* Tile text style */
@@ -48,21 +90,16 @@
 	display: block;
 	content: "";
 	height: 2px;
-	/*width: 0;*/
 	background-color: rgb(232, 226, 192);
 	margin: 0 auto;
-	/*transition: .2s ease-in-out;*/
 }
-
-/*.tile_text:hover:after {
-	width: 100%;
-}*/
 
 /* Tile list */
 .tile_list {
 	display: table;
 	width: 100%;
-	margin: 10px auto 5px;
+	margin: 60px auto 5px;
+	padding: 0;
 }
 
 .tile_list li {
