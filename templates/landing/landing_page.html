@@ -2,7 +2,8 @@
 {% load static %}
 
 {% block include_css %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/landing/landing.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/landing/tile.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/landing/manufacturers.css' %}">
 {% endblock %}
 
 {% block title %}Плитка{% endblock %}
@@ -66,13 +67,13 @@
 					</li>
 					<li>
 						<a href="#">
-							<img src="../../media/images/landing/emblem_tiles/bath.png" alt="">
+							<img src="../../media/images/landing/emblem_tiles/steps.png" alt="">
 						</a>
 						<p><a class="tile_text" href="#">СТУПЕНИ</a></p>
 					</li>
 					<li>
 						<a href="#">
-							<img src="../../media/images/landing/emblem_tiles/bath.png" alt="">
+							<img src="../../media/images/landing/emblem_tiles/clinker.png" alt="">
 						</a>
 						<p><a class="tile_text" href="#">КЛИНКЕР</a></p>
 					</li>
@@ -82,4 +83,54 @@
 	</div>
 </div>
 <hr class="separator">
+
+<div class="manufacturers_name">
+	<span>ПРОИЗВОДИТЕЛИ</span>
+</div>
+<hr class="separator">
+<div class="manufacturers">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-1">
+				<div class="arrow_prev">
+					<img src="../../media/images/landing/arrows/prev.png" alt="">
+				</div>
+			</div>
+			<div class="col-xs-10">
+				<ul class="manufacturers_list">
+					<li>
+						<a href="#">
+							<div><img src="../../media/images/landing/manufacturers/porcelanosa-logo.png" alt=""></div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div><img src="../../media/images/landing/manufacturers/porcelanosa-logo.png" alt=""></div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div><img src="../../media/images/landing/manufacturers/porcelanosa-logo.png" alt=""></div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div><img src="../../media/images/landing/manufacturers/porcelanosa-logo.png" alt=""></div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div><img src="../../media/images/landing/manufacturers/porcelanosa-logo.png" alt=""></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-1">
+				<div class="arrow_next">
+					<img src="../../media/images/landing/arrows/next.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 {% endblock %}

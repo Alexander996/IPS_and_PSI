@@ -1,0 +1,51 @@
+/* Block title */
+.manufacturers_name {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.manufacturers_name span {
+	font-family: "Phenomena Bold", sans-serif;
+	font-size: 36px;
+	color: rgb(220, 127, 49);
+	margin: 0 7px;
+}
+
+/* Background style */
+.manufacturers {
+	background-color: rgb(179, 177, 151);
+	border-top: 2px solid rgb(220, 127, 49);
+}
+
+/* Arrows */
+
+
+/* Manufacturers list */
+.manufacturers_list {
+	display: table;
+	width: 100%;
+	margin: 20px auto;
+	padding: 0;
+}
+
+.manufacturers_list li {
+	display: table-cell;
+	text-align: center;
+}
+
+.manufacturers_list div {
+	display: inline-block;
+	width: 176px;
+	height: 176px;
+	background-color: white;
+	border: 5px solid rgb(179, 177, 151);
+}
+
+.manufacturers_list div:hover {
+	border: 5px solid rgb(220, 127, 49);
+}
+
+.manufacturers_list img {
+	border: 3px solid rgb(50, 0, 75);
+	padding: 5px;
+}
