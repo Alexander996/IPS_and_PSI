@@ -3,7 +3,7 @@
 	text-align: center;
 	background-color: rgb(52, 74, 101);
 	padding-top: 10px;
-	border-bottom: 2px solid rgb(220, 127, 49);
+	/*border-bottom: 2px solid rgb(220, 127, 49);*/
 }
 
 .additional_products_name span {
@@ -12,6 +12,12 @@
 	font-size: 36px;
 	color: rgb(220, 127, 49);
 	margin-top: 10px;
+}
+
+/* Fence under name */
+.additional_products img {
+	max-width: 100%;
+	height: auto;
 }
 
 /* Additional products list */
