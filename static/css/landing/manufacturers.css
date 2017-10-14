@@ -14,7 +14,9 @@
 /* Background style */
 .manufacturers {
 	background-color: rgb(179, 177, 151);
-	border-top: 2px solid rgb(220, 127, 49);
+	border-color: rgb(220, 127, 49);
+	border-style: solid;
+	border-width: 2px 0;
 }
 
 /* Arrows */
