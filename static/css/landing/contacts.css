@@ -1,0 +1,64 @@
+/* Block background */
+.contacts {
+	background-color: rgb(179, 177, 151);
+	padding-top: 10px;
+	border-bottom: 2px solid rgb(220, 127, 49);
+	margin-bottom: 10px;
+}
+
+/* Block title */
+.contacts_title {
+	text-align: center;
+	background-color: rgb(232, 226, 192);
+	padding-top: 5px;
+	margin-bottom: 10px;
+}
+
+.contacts_title span {
+	display: block;
+	font-family: "Phenomena Bold", sans-serif;
+	font-size: 36px;
+	color: rgb(220, 127, 49);
+	padding-bottom: 5px;
+}
+
+/* Contacts separator */
+.contacts_separator {
+	background-color: rgb(239, 215, 80);
+	margin-bottom: 0;
+}
+
+/* Contacts list */
+.contacts_info {
+	text-align: center;
+}
+
+.contacts_info span {
+	color: rgb(27, 29, 53);
+	font-family: "Phenomena Bold", sans-serif;
+	font-size: 24px;
+}
+
+.contacts_data {
+	display: table;
+	text-align: center;
+	height: 150px;
+}
+
+.contacts_data span {
+	display: table-cell;
+	color: rgb(52, 74, 101);
+	font-family: "Phenomena Bold", sans-serif;
+	font-size: 22px;
+	vertical-align: middle;
+}
+
+/* Yandex map */
+.yandex_map {
+	text-align: center;
+	padding: 30px 10px;
+}
+
+.yandex_map iframe {
+	border: 3px solid rgb(27, 29, 53);
+}
