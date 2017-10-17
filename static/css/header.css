@@ -80,7 +80,7 @@ p {
 
 /* Clock in the header */
 .working_time {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 .working_time span {
@@ -148,7 +148,22 @@ p {
 	background-color: rgb(146, 143, 134);
 }
 
+/* Login */
+.header_login {
+	margin-bottom: 10px;
+}
+
+.header_login p {
+	display: inline;
+}
+
+.header_login p a {
+	border: 2px solid rgb(220, 127, 49);
+	border-radius: 5px;
+}
+
 /* Basket */
 .header_basket {
-	margin-top: 10px;
+	margin-top: 0;
+
 }
