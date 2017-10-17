@@ -147,3 +147,8 @@ p {
 	margin-left: 2px;
 	background-color: rgb(146, 143, 134);
 }
+
+/* Basket */
+.header_basket {
+	margin-top: 10px;
+}
