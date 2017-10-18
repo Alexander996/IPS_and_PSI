@@ -17,7 +17,7 @@ p {
 .header_text {
 	color: rgb(220, 127, 49);
 	font-family: "Phenomena", sans-serif;
-	font-size: 20px;
+	/*font-size: 20px;*/
 }
 
 /* Header link style */
@@ -60,7 +60,7 @@ p {
 
 /* Address in the header */
 .header_address {
-	font-size: 16px;
+	/*font-size: 16px;*/
 	margin-left: 15px;
 	padding-bottom: 25px;
 }
@@ -88,10 +88,6 @@ p {
 	padding-left: 10px;
 }
 
-.working_time span sup {
-	font-size: 12px;
-}
-
 /* Navbar */
 .header_navbar {
 	display: table;
@@ -107,9 +103,9 @@ p {
 	text-decoration: none;
 }
 
-.header_navbar li a {
+/*.header_navbar li a {
 	font-size: 26px;
-}
+}*/
 
 /* Search line */
 .search {
@@ -166,4 +162,63 @@ p {
 .header_basket {
 	margin-top: 0;
 
+}
+
+/* For small devices */
+@media only screen and (min-width: 992px) {
+	.header_navbar li a {
+		font-size: 26px;
+	}
+
+	.header_text {
+		font-size: 20px;
+	}
+
+	.header_address {
+		font-size: 16px;
+	}
+
+	.working_time span sup {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.header_navbar li a {
+		font-size: 21px;
+	}
+
+	.header_text {
+		font-size: 17px;
+	}
+
+	.header_address {
+		font-size: 13px;
+	}
+
+	.working_time span sup {
+		font-size: 11px;
+	}
+
+	.header_login p a {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.header_navbar li a {
+		font-size: 18px;
+	}
+
+	.header_text {
+		font-size: 15px;
+	}
+
+	.header_address {
+		font-size: 11px;
+	}
+
+	.working_time span sup {
+		font-size: 10px;
+	}
 }
