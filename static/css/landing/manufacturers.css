@@ -20,34 +20,38 @@
 }
 
 /* Arrows */
+.arrow_prev, .arrow_next {
+	height: 140px;
+	line-height: 140px;
+}
+
+.arrow_prev img, .arrow_next img {
+	max-width: 100%;
+	height: auto;
+}
 
 
 /* Manufacturers list */
-.manufacturers_list {
-	display: table;
+.manufacturers_viewport {
 	width: 100%;
-	margin: 20px auto;
-	padding: 0;
+	margin: 20px 0;
 }
 
-.manufacturers_list li {
-	display: table-cell;
-	text-align: center;
+.manufacturers_slidewrapper {
+	width: 100%;
 }
 
-.manufacturers_list div {
+.manufacturers_list {
+	width: 100%;
+}
+
+.manufacturers_item {
 	display: inline-block;
-	width: 176px;
-	height: 176px;
-	background-color: white;
-	border: 5px solid rgb(179, 177, 151);
+	width: 20%;
+	padding: 0 10px;
 }
 
-.manufacturers_list div:hover {
-	border: 5px solid rgb(220, 127, 49);
-}
-
-.manufacturers_list img {
+.manufacturers_item_border {
 	border: 3px solid rgb(50, 0, 75);
-	padding: 5px;
+	height: 100px;
 }
