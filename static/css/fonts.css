@@ -1,15 +1,24 @@
 /* Phenomena */
 @font-face {
 	font-family: "Phenomena";
-	src: url("../fonts/phenomena/Phenomena-Regular.otf");
+	src: url("../fonts/phenomena/Phenomena-Regular/Phenomena-Regular.eot");
+	src: url("../fonts/phenomena/Phenomena-Regular/Phenomena-Regular.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/phenomena/Phenomena-Regular/Phenomena-Regular.woff") format("woff"),
+	url("../fonts/phenomena/Phenomena-Regular/Phenomena-Regular.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "Phenomena ExtraBold";
-	src: url("../fonts/phenomena/Phenomena-ExtraBold.otf");
+	src: url("../fonts/phenomena/Phenomena-ExtraBold/Phenomena-ExtraBold.eot");
+	src: url("../fonts/phenomena/Phenomena-ExtraBold/Phenomena-ExtraBold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/phenomena/Phenomena-ExtraBold/Phenomena-ExtraBold.woff") format("woff"),
+	url("../fonts/phenomena/Phenomena-ExtraBold/Phenomena-ExtraBold.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "Phenomena Bold";
-	src: url("../fonts/phenomena/Phenomena-Bold.otf");
+	src: url("../fonts/phenomena/Phenomena-Bold/Phenomena-Bold.eot");
+	src: url("../fonts/phenomena/Phenomena-Bold/Phenomena-Bold.eot?#iefix") format("embedded-opentype"),
+	url("../fonts/phenomena/Phenomena-Bold/Phenomena-Bold.woff") format("woff"),
+	url("../fonts/phenomena/Phenomena-Bold/Phenomena-Bold.ttf") format("truetype");
 }
