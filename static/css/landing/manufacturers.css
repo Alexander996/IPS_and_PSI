@@ -64,15 +64,17 @@
 }
 
 .manufacturers_item_wrapper {
-	border: 3px solid rgb(179, 177, 151);
+	border: 4px solid rgb(179, 177, 151);
 }
 
 .manufacturers_item_wrapper:hover {
-	border: 3px solid rgb(220, 127, 49);
+	border: 4px solid rgb(220, 127, 49);
+	border-radius: 12px;
 }
 
 .manufacturers_item_border {
 	border: 3px solid rgb(50, 0, 75);
+	border-radius: 8px;
 	height: 100px;
 	background-color: white;
 	line-height: 94px;
