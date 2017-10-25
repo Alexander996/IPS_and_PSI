@@ -28,30 +28,58 @@
 .arrow_prev img, .arrow_next img {
 	max-width: 100%;
 	height: auto;
+	border: 3px solid rgb(179, 177, 151);
+	border-radius: 100px;
 }
 
+.arrow_prev img:hover, .arrow_next img:hover {
+	border: none;
+	cursor: pointer;
+}
 
 /* Manufacturers list */
 .manufacturers_viewport {
 	width: 100%;
 	margin: 20px 0;
+	overflow: hidden;
 }
 
 .manufacturers_slidewrapper {
-	width: 100%;
+	width: 200%;
+	transition: .7s;
+	transition-timing-function: ease-in-out;
 }
 
 .manufacturers_list {
-	width: 100%;
+	width: 50%;
+	display: inline-block;
+	float: left;
 }
 
 .manufacturers_item {
 	display: inline-block;
 	width: 20%;
 	padding: 0 10px;
+	vertical-align: middle;
+}
+
+.manufacturers_item_wrapper {
+	border: 3px solid rgb(179, 177, 151);
+}
+
+.manufacturers_item_wrapper:hover {
+	border: 3px solid rgb(220, 127, 49);
 }
 
 .manufacturers_item_border {
 	border: 3px solid rgb(50, 0, 75);
 	height: 100px;
+	background-color: white;
+	line-height: 94px;
+}
+
+.manufacturers_item_border img {
+	max-width: 100%;
+	height: auto;
+	padding: 1px;
 }
