@@ -1,0 +1,88 @@
+/* Slider */
+.slider {
+	background-color: rgb(46, 63, 90);
+	margin-bottom: 10px;
+}
+
+.slider_block {
+	margin: 10px 0;
+	border: 2px solid rgb(27, 29, 53);
+	position: relative;
+}
+
+/* Slider arrows */
+.prev_slide, .next_slide {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+	background-color: white;
+	top: 50%;
+	margin-top: -25px;
+	border: 2px solid rgb(27, 29, 53);
+	cursor: pointer;
+	z-index: 1;
+}
+
+.prev_slide {
+	left: 20px;
+}
+
+.next_slide {
+	right: 20px;
+}
+
+/* Slider list */
+.viewport {
+	width: 100%;
+	overflow: hidden;
+}
+
+.slidewrapper {
+	margin: 0;
+	padding: 0;
+	width: 300%;
+	transition: 1s;
+	transition-timing-function: ease-in-out;
+}
+
+.slidewrapper li {
+	margin: 0;
+	padding: 0;
+	width: 33.33333333333%;
+	list-style: none;
+	display: inline-block;
+	float: left;
+}
+
+.slidewrapper img {
+	width: 100%;
+	border: 2px solid rgb(27, 29, 53);
+}
+
+/* Nsvigation buttons */
+.nav_btns {
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.nav_btns li {
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 100px;
+	border: 1px solid rgb(27, 29, 53);
+	cursor: pointer;
+	margin: 3px;
+}
+
+.nav_btns li:first-child {
+	background-color: rgb(27, 29, 53);
+}

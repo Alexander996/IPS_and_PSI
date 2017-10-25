@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block include_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/landing/slider.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/landing/tile.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/landing/manufacturers.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/landing/additional_products.css' %}">
@@ -11,6 +12,31 @@
 {% block title %}Плитка{% endblock %}
 
 {% block content %}
+<hr class="separator">
+<div class="slider">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="slider_block">
+					<div class="prev_slide"></div>
+					<div class="viewport">
+						<ul class="slidewrapper">
+							<li><img src="../../media/images/landing/slider/img1_.jpg" alt=""></li>
+							<li><img src="../../media/images/landing/slider/img2.jpg" alt=""></li>
+							<li><img src="../../media/images/landing/slider/img3.jpg" alt=""></li>
+						</ul>
+					</div>
+					<div class="next_slide"></div>
+					<ul class="nav_btns">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <hr class="separator">
 <div class="tile_name">
 	<div class="square" style="opacity: 0.05"></div>
@@ -288,10 +314,13 @@
 	</div>
 </div>
 <hr class="separator">
+{% endblock %}
 
+{% block include_scripts %}
 <!-- JQuery -->
 <script src="../../static/js/JQuery/jquery-3.2.1.min.js"></script>
 
 <!-- JS -->
 <script src="../../static/js/landing/manufacturers_slider.js"></script>
+<script src="../../static/js/landing/slider.js"></script>
 {% endblock %}

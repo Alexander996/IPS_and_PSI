@@ -1,36 +1,36 @@
-var $slidewrapper = $('.manufacturers_slidewrapper');
-var $viewport = $('.manufacturers_viewport');
+var $manufacturers_slidewrapper = $('.manufacturers_slidewrapper');
+var $manufacturers_viewport = $('.manufacturers_viewport');
 
-var translateWidth = 0;
-var slideNow = 1;
-var slideCount = $slidewrapper.children().length;
+var manufacturers_translateWidth = 0;
+var manufacturers_slideNow = 1;
+var manufacturers_slideCount = $manufacturers_slidewrapper.children().length;
 
-function nextSlide() {
-    if (slideNow < slideCount && slideNow > 0) {
-        translateWidth = -$viewport.width() * slideNow;
-        $slidewrapper.css({
-            'transform': 'translate(' + translateWidth + 'px, 0)'
+function manufacturers_nextSlide() {
+    if (manufacturers_slideNow < manufacturers_slideCount && manufacturers_slideNow > 0) {
+        manufacturers_translateWidth = -$manufacturers_viewport.width() * manufacturers_slideNow;
+        $manufacturers_slidewrapper.css({
+            'transform': 'translate(' + manufacturers_translateWidth + 'px, 0)'
         });
-        slideNow++;
+        manufacturers_slideNow++;
     }
 }
 
-function prevSlide() {
-    if (slideNow <= slideCount && slideNow > 1) {
-        translateWidth = -$viewport.width() * (slideNow - 2);
-        $slidewrapper.css({
-            'transform': 'translate(' + translateWidth + 'px, 0)'
+function manufacturers_prevSlide() {
+    if (manufacturers_slideNow <= manufacturers_slideCount && manufacturers_slideNow > 1) {
+        manufacturers_translateWidth = -$manufacturers_viewport.width() * (manufacturers_slideNow - 2);
+        $manufacturers_slidewrapper.css({
+            'transform': 'translate(' + manufacturers_translateWidth + 'px, 0)'
         });
-        slideNow--;
+        manufacturers_slideNow--;
     }
 }
 
 $(document).ready(function () {
     $('.arrow_next img').click(function(event) {
-        nextSlide();
+        manufacturers_nextSlide();
     });
 
     $('.arrow_prev img').click(function(event) {
-        prevSlide();
+        manufacturers_prevSlide();
     });
 });
